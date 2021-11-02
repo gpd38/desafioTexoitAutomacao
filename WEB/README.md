@@ -32,9 +32,8 @@ src
     	  |	  └── Avaliação QA aut.pdf
     	  ├── evidencias (Pasta onde os printscreen serão gerados)
     	  └── features
-    	  	  ├── compraProdutos.feature
-    	   	  ├── criarConta.feature (Não utilizado)
-            └── detalheProduto.feature
-
+              ├── compraProdutos.feature
+              ├── criarConta.feature (Não utilizado)
+              └── detalheProduto.feature
 ```
 
