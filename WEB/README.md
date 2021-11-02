@@ -12,6 +12,7 @@
 - Maven
 - Selenium WebDriver
 - ExtentReports
+- Intellij
 
 ### EstruturaDoProjeto
 
