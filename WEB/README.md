@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="#Arquitetura">Arquitetura</a> •
-	<a href="#Estrutura do Projeto">Estrutura do Projeto</a>
+	<a href="#EstruturaDoProjeto">Estrutura do Projeto</a>
 </p>
 
 ### Arquitetura
@@ -13,7 +13,7 @@
 - Selenium WebDriver
 - ExtentReports
 
-### Estrutura do Projeto
+### EstruturaDoProjeto
 
 ```
 src
@@ -29,7 +29,7 @@ src
     |		  └── steps (Cenários de testes)
     └── resources
     	  ├── desafio
-    	  |		└── Avaliação QA aut.pdf
+    	  |	  └── Avaliação QA aut.pdf
     	  ├── evidencias (Pasta onde os printscreen serão gerados)
     	  └── features
     	  	  ├── compraProdutos.feature
