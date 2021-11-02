@@ -9,14 +9,22 @@ O desafio consiste em realizar uma automação web e uma automação de API.
 </p>
 
 <p align="center">
-	<a href="#Seção01">Seção 01</a> •
-	<a href="#Seção02">Seção 02</a> •
+	<a href="#Web">Web</a> •
+	<a href="#API">API</a> •
 	<a href="#Licença">Licença</a>
 </p>
 
-### Seção01
+### Web
 
-### Seção02
+O desafio de automação web é realizado no site http://automationpractice.com/index.php.
+
+O código fonte se encontra no diretório [WEB](https://github.com/gpd38/desafioTexoitAutomacao/tree/main/WEB)
+
+### API
+
+O desafio de automação API é realizado na API https://gorest.co.in/
+
+O código fonte se encontra no diretório [API](https://github.com/gpd38/desafioTexoitAutomacao/tree/main/API)
 
 ### Licença
 

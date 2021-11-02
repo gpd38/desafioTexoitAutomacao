@@ -89,10 +89,10 @@ public class Driver {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void ScrollToElementJavaScript() {
+    public static void ScrollToElementJavaScript(String deslocamento) {
         JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
-        //executor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-        executor.executeScript("window.scrollTo(0, 400)");
+        executor.executeScript("window.scrollTo(0, " + deslocamento + ")");
+        //executeScript("arguments[0].scrollIntoView(true);",element);
     }
 
     public static void invisibilityOf(WebElement element) {

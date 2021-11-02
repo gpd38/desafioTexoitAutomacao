@@ -10,6 +10,9 @@ public class ProdutoMap {
     @FindBy(xpath = "//div[2]/a[1]/span[1]")
     public WebElement btnAddToCart;
 
+    @FindBy(xpath = "//a[@class='button btn btn-default standard-checkout button-medium']//span[contains(text(),'Proceed to checkout')]")
+    public WebElement btnProceesCheckoutSumary;
+
     @FindBy(xpath = "//span[contains(text(),'Proceed to checkout')]")
     public WebElement btnProceedCheckout;
 
@@ -36,4 +39,16 @@ public class ProdutoMap {
 
     @FindBy(xpath = "//li[@class='ajax_block_product first-in-line first-item-of-tablet-line first-item-of-mobile-line col-xs-12']//div[@class='product-container']//div[@class='row']//div[@class='right-block col-xs-4 col-xs-12 col-md-4']//div[@class='right-block-content row']//div[@class='button-container col-xs-7 col-md-12']//a[@class='button lnk_view btn btn-default']")
     public WebElement btnMoreInformation;
+
+    @FindBy(xpath = "//table[@class='table-data-sheet']//tbody/tr[1]/td[2]")
+    public WebElement txtComposition;
+
+    @FindBy(xpath = "//table[@class='table-data-sheet']//tbody/tr[2]/td[2]")
+    public WebElement txtStyles;
+
+    @FindBy(xpath = "//table[@class='table-data-sheet']//tbody/tr[3]/td[2]")
+    public WebElement txtProperties;
+
+    @FindBy(id = "categories_block_left")
+    public WebElement txtCategorias;
 }

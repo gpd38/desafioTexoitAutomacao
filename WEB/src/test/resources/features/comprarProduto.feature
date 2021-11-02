@@ -1,5 +1,5 @@
 #language:pt
-@comprarProduto
+@lojaVirtual
 Funcionalidade: Comprar Na Loja Virtual
 
   @validarCompra
@@ -14,7 +14,7 @@ Funcionalidade: Comprar Na Loja Virtual
     E adiciono o produto no carrinho
     E clico em Proceed to checkout
     Entao valido se estou na pagina Order - My Store no fluxo de pagamento da opcao Summary
-    E clico em Proceed to checkout
+    E clico em Proceed to checkoutSummary
     Entao valido se estou na pagina Order - My Store no fluxo de pagamento da opcao Address
     E clico em Proceed to checkout
     Entao valido se estou na pagina Order - My Store no fluxo de pagamento da opcao Shipping

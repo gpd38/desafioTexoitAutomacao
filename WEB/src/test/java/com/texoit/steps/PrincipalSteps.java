@@ -87,8 +87,12 @@ public class PrincipalSteps {
 
     @Quando("clico em Proceed to checkout")
     public void clicoEmProceedToCheckout() {
-        Driver.ScrollToElementJavaScript();
         produtoPage.clickCheckout();
+    }
+
+    @Quando("clico em Proceed to checkoutSummary")
+    public void clicoEmProceedToCheckoutSummary() {
+        produtoPage.clickCheckoutSumary();
     }
 
     @Entao("valido se estou na pagina Order - My Store no fluxo de pagamento da opcao Summary")
@@ -108,7 +112,7 @@ public class PrincipalSteps {
 
     @Entao("clico em Terms of services")
     public void clicoEmTermsOfServices() {
-     produtoPage.clickCheckTermsOfServices();
+        produtoPage.clickCheckTermsOfServices();
     }
 
     @Entao("valido se estou na pagina Order - My Store no fluxo de pagamento da opcao Payment")
@@ -135,22 +139,30 @@ public class PrincipalSteps {
     public void clicoNoMenuDresses() {
         principalPage.clickLinkDresses();
     }
-    @Entao("valido se estou na pagina {string}")
-    public void validoSeEstouNaPagina(String string) {
-        Assert.assertEquals(string, produtoPage.getInformationTab());
+
+    @Entao("valido se estou na pagina Dresses My Store")
+    public void validoSeEstouNaPagina() {
+        produtoPage = new ProdutoPage();
+        Assert.assertEquals("Dresses - My Store", produtoPage.getTitulo());
     }
+
     @Entao("se existe o produto {string} de preço {string}")
     public void seExisteOProdutoDePreço(String produtoName, String produtoPrice) {
         produtoPage.clickListVisualization();
-        Assert.assertEquals(produtoName,produtoPage.getNameProduct());
-        Assert.assertEquals(produtoPrice,produtoPage.getPriceProduct());
+        Assert.assertEquals(produtoName, produtoPage.getNameProduct());
+        Assert.assertEquals(produtoPrice, produtoPage.getPriceProduct());
     }
+
     @Quando("clico no produto {string}")
     public void clicoNoProduto(String string) {
         produtoPage.clickMoreInformation();
     }
+
     @Entao("confirmo a Compositions {string} e a Styles {string} e a Properties {string}")
     public void confirmoACompositionsEAStylesEAProperties(String compositions, String styles, String properties) {
-        Assert.assertEquals(string, produtoPage.get);
+        Driver.ScrollToElementJavaScript("300");
+        Assert.assertEquals(compositions, produtoPage.getCompositionsProduct());
+        Assert.assertEquals(styles, produtoPage.getStylesProduct());
+        Assert.assertEquals(properties, produtoPage.getPropertiesProduct());
     }
 }
