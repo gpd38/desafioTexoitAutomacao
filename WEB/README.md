@@ -14,12 +14,9 @@ O desafio consiste em realizar uma automação web e uma automação de API.
 	<a href="#Licença">Licença</a>
 </p>
 
-
 ### Seção01
 
-
 ### Seção02
-
 
 ### Licença
 

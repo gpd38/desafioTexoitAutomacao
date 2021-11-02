@@ -1,24 +1,26 @@
 package com.texoit.pages;
 
+import com.texoit.core.Driver;
 import com.texoit.maps.PrincipalMap;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class PrincipalPage {
-    private WebDriver driver;
     private PrincipalMap principalMap;
 
-    public PrincipalPage(WebDriver driver) {
-        this.driver = driver;
+    public PrincipalPage() {
         principalMap = new PrincipalMap();
-        PageFactory.initElements(driver, principalMap);
+        PageFactory.initElements(Driver.getDriver(), principalMap);
     }
 
     public String getTitulo() {
         return principalMap.txtTitulo.getText();
     }
 
-    public void clickBotao() {
-        principalMap.btnTitulo.click();
+    public void clickBotaoLogin() {
+        principalMap.btnLogin.click();
+    }
+
+    public void clickLinkDresses() {
+        principalMap.linkDresses.click();
     }
 }

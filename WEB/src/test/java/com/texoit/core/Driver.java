@@ -15,6 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Driver {
     private static WebDriver driver;
@@ -58,7 +61,7 @@ public class Driver {
 
     public static void criaDiretorio() {
         String caminho = "src/test/resources/evidencias";
-        diretorio = new File(caminho + "/" + nomeCenario);
+        diretorio = new File(caminho + "/" + getNowDate() + nomeCenario);
         diretorio.mkdir();
         numPrint = 0;
     }
@@ -66,9 +69,16 @@ public class Driver {
     public static void printScreen(String passo) throws IOException {
         numPrint++;
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String caminho = diretorio.getPath() + "/" + numPrint + " - " + passo + ".png";
+        String caminho = diretorio.getPath() + "/" + getNowDate() + " - " + passo + ".png";
         FileUtils.copyFile(file, new File(caminho));
 
+    }
+
+    public static String getNowDate() {
+        String mask = "yyyy-MM-dd_HH-mm-ss";
+        DateFormat dateFormat = new SimpleDateFormat(mask);
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 
     public static WebDriver getDriver() {
@@ -77,7 +87,12 @@ public class Driver {
 
     public static void visibilityOf(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
+    }
 
+    public static void ScrollToElementJavaScript() {
+        JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
+        //executor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        executor.executeScript("window.scrollTo(0, 400)");
     }
 
     public static void invisibilityOf(WebElement element) {
