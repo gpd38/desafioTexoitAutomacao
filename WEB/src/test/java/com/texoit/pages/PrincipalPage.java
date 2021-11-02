@@ -12,10 +12,6 @@ public class PrincipalPage {
         PageFactory.initElements(Driver.getDriver(), principalMap);
     }
 
-    public String getTitulo() {
-        return principalMap.txtTitulo.getText();
-    }
-
     public void clickBotaoLogin() {
         principalMap.btnLogin.click();
     }

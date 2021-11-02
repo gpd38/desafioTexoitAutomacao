@@ -7,7 +7,7 @@ Funcionalidade: Comprar Na Loja Virtual
     Dado que estou na pagina principal
     Quando clico para realizar login
     Entao valido se estou na pagina Login My Store
-    Quando informo email "automacao@gmail.com" senha "Senha@123"
+    Quando informo email "automacao@hotmail.com" senha "Senha@123"
     E clico em SignIn
     Entao valido se estou na pagina My account My Store
     Quando pesquiso o produto "Faded Short Sleeve T-shirts"

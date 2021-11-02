@@ -4,8 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ProdutoMap {
-    @FindBy(name = "title")
-    public WebElement txtTitulo;
 
     @FindBy(xpath = "//div[2]/a[1]/span[1]")
     public WebElement btnAddToCart;

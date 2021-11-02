@@ -24,9 +24,4 @@ public class MinhaContaPage {
         minhaContaMap.btnSearchProdutos.click();
     }
 
-    public void selectCountry(String country) {
-//        Select select = new Select(minhaContaMap.txtCountry);
-//        Driver.aguardaOptions(select);
-//        select.selectByVisibleText(country);
-    }
 }
