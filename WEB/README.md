@@ -29,8 +29,6 @@ src
     |		  ├── runner (Classe executora)
     |		  └── steps (Cenários de testes)
     └── resources
-    	  ├── desafio
-    	  |	  └── Avaliação QA aut.pdf
     	  ├── evidencias (Pasta onde os printscreen serão gerados)
     	  └── features
               ├── compraProdutos.feature
