@@ -34,7 +34,7 @@ src
     	  └── features
     	  	  ├── compraProdutos.feature
     	   	  ├── criarConta.feature (Não utilizado)
-   	 	      └── detalheProduto.feature
+              └── detalheProduto.feature
 
 ```
 
